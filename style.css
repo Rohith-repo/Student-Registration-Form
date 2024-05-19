@@ -143,3 +143,6 @@ form .user-details .input-box{
     flex-direction: column;
   }
 }
+.Tables{
+  background-color: red;
+}

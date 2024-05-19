@@ -5,7 +5,6 @@
   <title>Student Registration</title>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js">=</script>
 </head>
 <body>
   <div class="container">
@@ -15,23 +14,23 @@
         <div class="user-details">
           <div class="input-box">
             <span class="details">Name</span>
-            <input type="text" placeholder="Enter your name" name="name" id="name" >
+            <input type="text" placeholder="Enter your name" name="name" id="name" required>
           </div>
           <div class="input-box">
             <span class="details">Register ID</span>
-            <input type="text" placeholder="Enter your Register ID" name="id" id="id">
+            <input type="text" placeholder="Enter your Register ID" name="id" id="id" required>
           </div>
           <div class="input-box">
             <span class="details">Email</span>
-            <input type="email" placeholder="Enter your Email" name="email" id="email">
+            <input type="email" placeholder="Enter your Email" name="email" id="email" required>
           </div>
           <div class="input-box">
             <span class="details">Department</span>
-            <input type="text" placeholder="Enter your Department" name="dept" id="dept">
+            <input type="text" placeholder="Enter your Department" name="dept" id="dept" required>
           </div>
           <div class="input-box">
             <span class="details">Year</span>
-            <input type="number" placeholder="Enter your Year" name="year" id="year">
+            <input type="number" placeholder="Enter your Year" name="year" id="year" required>
           </div>
         </div>
         <div class="gender-details">
@@ -58,6 +57,9 @@
           <input type="submit" value="Register">
         </div>
       </form>
+        <form action="connect.php" method="POST">
+          <input type="submit" value="Show Tables" name="show_tables" class="Tables" >
+    </form>
     </div>
   </div>
 </body>
